@@ -1,12 +1,11 @@
-package med.voll.api.paciente;
+package med.voll.api.dominio.paciente;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
-import med.voll.api.direccion.Direccion;
-import med.voll.api.medico.DatosEditarMedico;
+import med.voll.api.dominio.direccion.Direccion;
 
 @Table(name = "pacientes")
 @Entity(name = "Paciente")
@@ -46,6 +45,9 @@ public class Paciente {
         }
         if (datos.documento() != null) {
             this.documento = datos.documento();
+        }
+        if (datos.email() != null) {
+            this.email = datos.email();
         }
         if (datos.direccion() != null) {
             this.direccion = direccion.actualizarDatos(datos.direccion());

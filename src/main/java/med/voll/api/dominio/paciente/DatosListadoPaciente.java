@@ -1,4 +1,4 @@
-package med.voll.api.paciente;
+package med.voll.api.dominio.paciente;
 
 public record DatosListadoPaciente(Long id, String nombre, String documento, String telefono, String email) {
 

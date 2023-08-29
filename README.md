@@ -1,5 +1,12 @@
 # Spring Boot #1 - CRUD
-Creando una api rest con Spring boot, parte 1.
+Creando una api rest con Spring boot, parte 1.<br>
+Dependencias:<br>
+```
+Lombok
+Bean Validation
+Spring Security
+```
+[Propiedades de configuración para Spring](https://docs.spring.io/spring-boot/docs/current/reference/html/application-properties.html)
 
 ### Creando el proyecto
 * Spring initializr: devtools, test, lombok
@@ -56,4 +63,40 @@ spring.jpa.properties.hibernate.format_sql=true
 ### Request PUT y DELETE
 * `@Transactional`
 * Path params: `@PathVariable`
-* `.findBy()`: este método se puede personalizar cambiandole el nombre. Spring mapea y crea una nueva query en base al nuevo nombre del método. 
+* `.findBy()`: este método se puede personalizar cambiandole el nombre. Spring mapea y crea una nueva query en base al nuevo nombre del método.
+
+--- 
+# Spring Boot #2 -
+
+### Estandarizando respuestas
+* Buenas prácticas
+  * **GET**: 200 (ok) + recurso.
+  * **PUT**: 200 (ok) + recurso actualizado.
+  * **POST**: 201 (created) + Header "Location", url recurso. `UriComponentsBuilder`.
+  * **DELETE**: 204 (no content).
+* ResponseEntity: códigos de respuesta
+
+---
+### Tratando errores
+Errores del lado DB como `EntityNotFoundException` (ID no encontrada) o `MethodArgumentNotValidException` (validaciónes no superadas) 
+* No responder con el stack-trace: `server.error.include-stacktrace=never` en `application.properties`
+* Control de errores a nivel global
+* `@RestControllerAdvice`
+* Idioma de los errores: El header `Accept-Language` sirve para indicar el idioma de respuesta, en el caso de esppañol el valor debe ser `es`.
+* [Personalización de mensajes de error](https://app.aluracursos.com/course/spring-boot-3-aplique-practicas-proteja-api-rest/task/83812)
+
+---
+### Spring Security
+Autenticación, Autorización, Protección contra ataques
+* [Hash de contraseñas](https://app.aluracursos.com/course/spring-boot-3-aplique-practicas-proteja-api-rest/task/83814)
+* Implementar configuración Spring Security
+* Proceso de autenticación
+
+---
+### JWT (JSON Web Token)
+* Generando un JWT
+* Definir variables de entorno
+
+---
+### Autenticación
+* 
