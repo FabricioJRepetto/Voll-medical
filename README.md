@@ -95,8 +95,19 @@ Autenticación, Autorización, Protección contra ataques
 ---
 ### JWT (JSON Web Token)
 * Generando un JWT
+* `AutenticacionController`: Endpoint para iniciar sesion y recibir un jwt
 * Definir variables de entorno
 
 ---
-### Autenticación
-* 
+### Autorización de las Request
+[Filtrar por roles](https://app.aluracursos.com/course/spring-boot-3-aplique-practicas-proteja-api-rest/task/83820) _deprecado?_
+<br>
+[Control de roles](https://app.aluracursos.com/course/spring-boot-3-aplique-practicas-proteja-api-rest/task/83821) _anotaciones_
+* Filtros: aplicando filtro de validación en `SecurityFilter`
+* `SecurityConfiguration`: 
+  * filtrando todos los endpoints excepto `/login`
+  * `addFilterBefore` para utilizar neustro filtro antes de los de Spring
+
+<br>
+<br>
+<br>
