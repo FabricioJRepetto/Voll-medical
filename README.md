@@ -66,7 +66,7 @@ spring.jpa.properties.hibernate.format_sql=true
 * `.findBy()`: este método se puede personalizar cambiandole el nombre. Spring mapea y crea una nueva query en base al nuevo nombre del método.
 
 --- 
-# Spring Boot #2 -
+# Spring Boot #2 - Autenticación y Autorización
 
 ### Estandarizando respuestas
 * Buenas prácticas
@@ -108,6 +108,8 @@ Autenticación, Autorización, Protección contra ataques
   * filtrando todos los endpoints excepto `/login`
   * `addFilterBefore` para utilizar neustro filtro antes de los de Spring
 
-<br>
-<br>
-<br>
+---
+# Spring Boot #3 - SOLID, documentación, etc.
+
+### Agendar consultas (nueva función)
+* 
