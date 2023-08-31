@@ -7,6 +7,7 @@ import com.auth0.jwt.exceptions.JWTCreationException;
 import com.auth0.jwt.exceptions.JWTVerificationException;
 import com.auth0.jwt.interfaces.DecodedJWT;
 import med.voll.api.dominio.usuario.Usuario;
+import med.voll.api.infra.errores.InvalidJWTException;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 
@@ -49,9 +50,10 @@ public class TokenService {
 
         } catch (JWTVerificationException ex) {
             System.out.println(ex.toString());
+            throw new InvalidJWTException("Token necesario, iniciar sesión");
         }
         if (verifier == null || verifier.getSubject() == null)  {
-            throw new RuntimeException("El token enviado no es válido");
+            throw new InvalidJWTException("El token enviado no es válido");
         }
         return verifier.getSubject();
     };

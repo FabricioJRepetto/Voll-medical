@@ -6,4 +6,6 @@ import org.springframework.data.domain.Pageable;
 
 public interface PacienteRepository extends JpaRepository<Paciente, Long> {
     Page<Paciente> findByActivoTrue(Pageable paginacion);
+
+    Paciente findActivoById(Long id);
 }

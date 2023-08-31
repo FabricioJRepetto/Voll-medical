@@ -112,4 +112,10 @@ Autenticación, Autorización, Protección contra ataques
 # Spring Boot #3 - SOLID, documentación, etc.
 
 ### Agendar consultas (nueva función)
-* 
+* [@JsonAlias](https://app.aluracursos.com/course/spring-boot-3-api-para-su-implementacion/task/84620): Indicar posibles nombres de los json y mapearlos a las propiedades correctas de los DTO.
+* [Formato de las fechas](https://app.aluracursos.com/course/spring-boot-3-api-para-su-implementacion/task/84621)
+* [Service Pattern](https://app.aluracursos.com/course/spring-boot-3-api-para-su-implementacion/task/84622)
+* `@Query`
+* Validadores: Interface e implementación automática con una List de componentes que implementan la interface.
+* [SOLID](https://app.aluracursos.com/course/spring-boot-3-api-para-su-implementacion/task/84623)
+* Testing

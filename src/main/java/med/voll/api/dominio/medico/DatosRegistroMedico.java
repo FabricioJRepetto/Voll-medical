@@ -29,7 +29,7 @@ public record DatosRegistroMedico(
         @Pattern(regexp = "\\d{4,6}")
         String documento,
         @NotNull
-        Epecialidad especialidad,
+        Especialidad especialidad,
         @NotNull
         @Valid
         DatosDireccion direccion

@@ -25,7 +25,7 @@ public class Medico {
     private Boolean activo;
 
     @Enumerated(EnumType.STRING)
-    private Epecialidad especialidad;
+    private Especialidad especialidad;
     @Embedded
     private Direccion direccion;
 
