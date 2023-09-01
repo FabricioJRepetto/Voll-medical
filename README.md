@@ -119,3 +119,15 @@ Autenticación, Autorización, Protección contra ataques
 * Validadores: Interface e implementación automática con una List de componentes que implementan la interface.
 * [SOLID](https://app.aluracursos.com/course/spring-boot-3-api-para-su-implementacion/task/84623)
 * Testing
+
+---
+### Documentación SpringDoc
+[Versión JSON](http://localhost:8080/v3/api-docs)<br>
+[Interfaz](http://localhost:8080/swagger-ui/index.html)
+* OpenAPI - Spring Doc: Instalar dependencias y agregar `/v3/api-docs` y `/swagger-ui.html` en la cofiguración de security (`infra/security/SecurityConfiguration`) para que no pida validación en esas rutas.
+* Agregar jwt a las peticiones de prueba de la documentación.
+* Agregar información y descripción a la página de documentación.
+
+---
+### Tests automatizados
+* 
