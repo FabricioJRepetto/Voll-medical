@@ -130,4 +130,11 @@ Autenticación, Autorización, Protección contra ataques
 
 ---
 ### Tests automatizados
-* 
+* tests...
+
+--- 
+### Build del proyecto
+* Build con maven: modificaciones en nuevo archivo`application-prod.yml` y build del paquete jar
+
+* "Deploy" [info](https://app.aluracursos.com/course/spring-boot-3-api-para-su-implementacion/task/84627)
+* [GraalVM Native Image](https://app.aluracursos.com/course/spring-boot-3-api-para-su-implementacion/task/84628)
